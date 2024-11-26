@@ -1,0 +1,29 @@
+public class ArithmeticPromotion {
+
+    public static void main(String[] args) {
+        // Initializing variables of different data types
+        int intVar = 10;
+        double doubleVar = 5.5;
+        float floatVar = 3.14f;
+        
+        // promotion from int to double
+        double result1 = intVar + doubleVar; // int is promoted to double
+        System.out.println("Result of int + double (promotion): " + result1);
+
+        // promotion from float to double
+        double result2 = floatVar + doubleVar; // float is promoted to double
+        System.out.println("Result of float + double (promotion): " + result2);
+        
+        //  promotion in mixed type operations
+        double result3 = (intVar * doubleVar) / floatVar; // int and double are promoted to double
+        System.out.println("Result of (int * double) / float (promotion): " + result3);
+        
+        // int promotion in an expression with multiple int values
+        int result4 = intVar * 5 / 2; // no promotion needed, all are int
+        System.out.println("Result of int * 5 / 2 (no promotion): " + result4);
+        
+        //  promotion in integer division (int -> double)
+        double result5 = intVar / doubleVar; // int is promoted to double
+        System.out.println("Result of int / double (promotion): " + result5);
+    }
+}
