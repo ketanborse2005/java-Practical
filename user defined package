@@ -1,0 +1,21 @@
+package ketan;
+
+class A
+{
+private void show()
+{
+system.out.println("learn the java");
+}
+public static void main (string[] args){
+A r=new A();
+r.show();
+}
+}
+
+
+
+save the code in any file 
+
+open====== ===cmd 
+type======   javac -d. A.java
+        ======java ketan.A
